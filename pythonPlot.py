@@ -12,6 +12,10 @@ import numpy as np
 print("This is assignment P1.9")
 choice = input("Please, to choose the function, insert an integer: ")
 
+while(len(choice)==0):
+    print("Usage: this is a list of integer and the corresponding functions:")
+    print("1	f(x)=x")
+    choice = input("Insert choosen function: ")
 try:
     choice = int(choice)
 except ValueError:
