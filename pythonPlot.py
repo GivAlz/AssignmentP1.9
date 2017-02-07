@@ -8,6 +8,12 @@ import matplotlib.pyplot as plt
 ##Numerical libraries
 import numpy as np
 
+#Python 2 and 3 compatibility
+try:
+   input = raw_input
+except NameError:
+   pass
+
 #First: handle user input
 print("This is assignment P1.9")
 choice = input("Please, to choose the function, insert an integer: ")
