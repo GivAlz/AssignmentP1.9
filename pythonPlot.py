@@ -31,3 +31,9 @@ f = lambda x: multif(x,choice)
 
 xval = np.arange(-5.0,5.1,0.1)
 yval = [f(x) for x in xval]
+#Third: plotting the values
+
+plt.plot(xval,yval,'blue')
+plt.xlabel('x values')
+plt.ylabel('y values')
+plt.show()
