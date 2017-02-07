@@ -15,6 +15,8 @@ choice = input("Please, to choose the function, insert an integer: ")
 while(len(choice)==0):
     print("Usage: this is a list of integer and the corresponding functions:")
     print("1	f(x)=x")
+    print("2	f(x)=x**2")
+    print("3	f(x)=x**3")
     choice = input("Insert choosen function: ")
 try:
     choice = int(choice)
@@ -26,6 +28,10 @@ except ValueError:
 def multif(x,my_type):
     if(my_type==1):
         return x
+    elif(my_type==2):
+        return x*x
+    elif(my_type==3):
+        return x*x*x
     #Added an else, in case something goes wrong!
     else:
         print("Something is wrong! Using 0 function!")
