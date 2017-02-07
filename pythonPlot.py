@@ -15,6 +15,8 @@ choice = input("Please, to choose the function, insert an integer: ")
 while(len(choice)==0):
     print("Usage: this is a list of integer and the corresponding functions:")
     print("1	f(x)=x")
+    print("2	f(x)=exp(x)")
+    print("3	f(x)=sqrt(|x|)")
     choice = input("Insert choosen function: ")
 try:
     choice = int(choice)
