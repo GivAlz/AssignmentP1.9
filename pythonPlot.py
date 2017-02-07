@@ -22,6 +22,10 @@ except ValueError:
 def multif(x,my_type):
     if(my_type==1):
         return x
+    elif(my_type==2):
+        return x*x
+    elif(my_type==3):
+        return x*x*x
     #Added an else, in case something goes wrong!
     else:
         print("Something is wrong! Using 0 function!")
