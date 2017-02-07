@@ -33,7 +33,7 @@ def multif(x,my_type):
 
 f = lambda x: multif(x,choice)
 
-xval = np.arange(-5.0,5.1,0.1)
+xval = np.arange(-3.0,3.1,0.1)
 yval = [f(x) for x in xval]
 #Third: plotting the values
 
