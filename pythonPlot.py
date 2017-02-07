@@ -17,6 +17,9 @@ while(len(choice)==0):
     print("1	f(x)=x")
     print("2	f(x)=x**2")
     print("3	f(x)=x**3")
+    print("4	f(x)=sin(x)")
+    print("5	f(x)=cos(x)")
+    print("6	f(x)=tan(x)")
     choice = input("Insert choosen function: ")
 try:
     choice = int(choice)
@@ -28,6 +31,12 @@ except ValueError:
 def multif(x,my_type):
     if(my_type==1):
         return x
+    elif(my_type==4):
+        return np.sin(x)
+    elif(my_type==5):
+        return np.cos(x)
+    elif(my_type==6):
+        return np.tan(x)
     elif(my_type==2):
         return x*x
     elif(my_type==3):
