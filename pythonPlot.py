@@ -17,3 +17,17 @@ try:
 except ValueError:
     print("You must insert an integer; default value 1 will be used")
     choice = int(1)
+#Second: filling in the lists
+
+def multif(x,my_type):
+    if(my_type==1):
+        return x
+    #Added an else, in case something goes wrong!
+    else:
+        print("Something is wrong! Using 0 function!")
+        return 0
+
+f = lambda x: multif(x,choice)
+
+xval = np.arange(-5.0,5.1,0.1)
+yval = [f(x) for x in xval]
