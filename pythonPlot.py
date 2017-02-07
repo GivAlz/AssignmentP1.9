@@ -20,6 +20,8 @@ while(len(choice)==0):
     print("4	f(x)=sin(x)")
     print("5	f(x)=cos(x)")
     print("6	f(x)=tan(x)")
+    print("7	f(x)=exp(x)")
+    print("8	f(x)=sqrt(|x|)")
     choice = input("Insert choosen function: ")
 try:
     choice = int(choice)
@@ -41,6 +43,10 @@ def multif(x,my_type):
         return x*x
     elif(my_type==3):
         return x*x*x
+    elif(my_type==7):
+        return np.exp(x)
+    elif(my_type==8):
+        return np.sqrt(np.abs(x))
     #Added an else, in case something goes wrong!
     else:
         print("Something is wrong! Using 0 function!")
