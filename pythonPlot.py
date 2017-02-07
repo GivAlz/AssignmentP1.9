@@ -23,6 +23,12 @@ def multif(x,my_type):
     if(my_type==1):
         return x
     elif(my_type==2):
+        return np.sin(x)
+    elif(my_type==3):
+        return np.cos(x)
+    elif(my_type==4):
+        return np.tan(x)
+    elif(my_type==2):
         return x*x
     elif(my_type==3):
         return x*x*x
