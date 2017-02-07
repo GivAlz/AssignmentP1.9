@@ -26,6 +26,10 @@ except ValueError:
 def multif(x,my_type):
     if(my_type==1):
         return x
+    elif(my_type==2):
+        return np.exp(x)
+    elif(my_type==3):
+        return np.sqrt(np.abs(x))
     #Added an else, in case something goes wrong!
     else:
         print("Something is wrong! Using 0 function!")
